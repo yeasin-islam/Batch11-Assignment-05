@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <!-- Web Title  -->
+    <title>DevBoard</title>
+    <!-- Tailwind CND -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUI CND -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--Google Font CDN  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Style  -->
+    <style>
+      .font-poppins {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="font-poppins bg-blue-300 px-32 pt-6">
+    <header>
+      <!-- navbar section  -->
+      <nav class="flex justify-between bg-[#FFFFFF] rounded-2xl px-6 py-5">
+        <!-- left side  -->
+        <div class="flex justify-start items-center gap-3">
+          <img src="./assets/logo.png" alt="" />
+          <h2 class="text-4xl">Dev<span class="font-bold">Board</span></h2>
+        </div>
+        <!-- right site -->
+        <div class="flex justify-end gap-3">
+          <div
+            class="flex justify-start items-center gap-3 p-4 bg-cyan-50 rounded-full"
+          >
+            <img src="./assets/checkbox.png" alt="" />
+            <h3 class="text-3xl font-bold">23</h3>
+          </div>
+          <div class="p-4 bg-cyan-50 rounded-full">
+            <img src="./assets/theme-btn.png" alt="" />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mt-5 pb-16">
+      <!-- Main Body section  -->
+      <section class="  bg-[#FFFFFF] rounded-2xl">
+        <!-- main page head section -->
+        <div class="p-6">
+          <!-- left  -->
+          <div class="flex justify-start items-center gap-2 bg-cyan-50 p-8">
+            <div class="p-6">
+              <img src="./assets/checkbox.png" alt="" />
+            </div>
+            <div>
+              <p>Task Assigned</p>
+              <h3 class="font-bold">06</h3>
+            </div>
+          </div>
+          <!-- middle  -->
+          <div></div>
+          <!-- right  -->
+          <div></div>
+        </div>
+        <!-- main page body section // updated box container-->
+        <div class="bg-blue-50">
+          <!-- Box-1 for Fix Mobile Button Issue -->
+          <div>
+            <h4 class="border rounded p-2 bg-[#FFFFFF]">ShopEase</h4>
+            <h2>Fix Mobile Button Issue</h2>
+            <p class="border rounded p-2 bg-[#FFFFFF]">
+              Debug using Chrome DevTools, check for overlapping elements, and
+              ensure onClick works properly and ensure onClick works properly
+            </p>
+            <div>
+              <div>
+                <p>Deadline</p>
+                <h4>21 March 2025</h4>
+              </div>
+              <button
+                class="btn rounded-lg bg-blue-700 text-white mt-4 ml-4 px-4"
+              >
+                Completed
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Activity Log History -->
+      <section></section>
+    </main>
+
+    <script src="./utilities/utilities.js"></script>
+  </body>
+</html>
