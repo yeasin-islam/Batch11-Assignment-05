@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+
+    <!-- Web Title  -->
+    <title>Discover Something Today</title>
+
+    <!-- Tailwind CND -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUI CND -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!--Google Font CDN  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Style  -->
+    <style>
+      .font-poppins {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="font-poppins px-32 py-6 bg-cyan-50">
+    <nav>
+      <div class="navbar justify-between bg-base-100 rounded-lg shadow-sm px-6">
+        <div class="flex justify-start items-center gap-3">
+          <div class="w-8"><img src="./assets/logo.png" alt="" /></div>
+          <h2 class="text-2xl">Dev<span class="font-bold">Board</span></h2>
+        </div>
+        <button
+          id="back-to-desk-btn"
+          class="btn text-white font-semibold bg-[#3752FD] p-4"
+        >
+          Back to desk
+        </button>
+      </div>
+    </nav>
+    <!-- main section  -->
+    <section>
+      <p class="font-bold text-3xl text-center mt-6">Blogs</p>
+      <!-- Question-1 -->
+      <div class="bg-white rounded-lg mt-6">
+        <h3 class="p-6 font-bold text-xl">
+          Question-1: What are the different ways to select an element in the
+          DOM?
+        </h3>
+        <hr />
+        <p class="p-6 font-medium tex-lg">Write your answer.</p>
+      </div>
+      <!-- Question-2 -->
+      <div class="bg-white rounded-lg mt-6">
+        <h3 class="p-6 font-bold text-xl">
+          Question-2: What is the difference between innerHTML, innerText, and
+          textContent ?
+        </h3>
+        <hr />
+        <p class="p-6 font-medium tex-lg">Write your answer.</p>
+      </div>
+      <!-- Question-3  -->
+      <div class="bg-white rounded-lg mt-6">
+        <h3 class="p-6 font-bold text-xl">
+          Question-3: What is event delegation in the DOM?
+        </h3>
+        <hr />
+        <p class="p-6 font-medium tex-lg">Write your answer.</p>
+      </div>
+      <!-- question-4  -->
+      <div class="bg-white rounded-lg mt-6">
+        <h3 class="p-6 font-bold text-xl">
+          Question-4: What is event bubbling in the DOM?
+        </h3>
+        <hr />
+        <p class="p-6 font-medium tex-lg">Write your answer.</p>
+      </div>
+      <!-- question-5  -->
+      <div class="bg-white rounded-lg mt-6">
+        <h3 class="p-6 font-bold text-xl">
+          Question-5: How do you create, add, and remove elements using JavaScript?
+        </h3>
+        <hr />
+        <p class="p-6 font-medium tex-lg">Write your answer.</p>
+      </div>
+    </section>
+
+    <script src="./script/backToDesk.js"></script>
+  </body>
+</html>

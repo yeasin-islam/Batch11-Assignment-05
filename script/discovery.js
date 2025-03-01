@@ -1,8 +1,8 @@
 // alert()
 document
-  .getElementById("back-to-desk-btn")
+  .getElementById("go-to-discovary-page")
   .addEventListener("click", function (event) {
     event.preventDefault();
-    window.location.href = "./index.html";
-    alert();
+    window.location.href = "./discovery.html";
+    alert("Update sucessfull");
   });
