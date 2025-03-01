@@ -32,10 +32,10 @@
     </style>
   </head>
 
-  <body class="font-poppins bg-blue-300 px-32 pt-6">
+  <body class="font-poppins bg-cyan-50 px-32 pt-6">
     <header>
       <!-- navbar section  -->
-      <nav class="flex justify-between bg-[#FFFFFF] rounded-2xl px-6 py-5">
+      <nav class="flex justify-between bg-[#FFFFFF] rounded-lg px-6 py-5">
         <!-- left side  -->
         <div class="flex justify-start items-center gap-3">
           <img src="./assets/logo.png" alt="" />
@@ -49,61 +49,112 @@
             <img src="./assets/checkbox.png" alt="" />
             <h3 class="text-3xl font-bold">23</h3>
           </div>
-          <div class="p-4 bg-cyan-50 rounded-full">
+          <button class="p-4 bg-cyan-50 rounded-full">
             <img src="./assets/theme-btn.png" alt="" />
-          </div>
+          </button>
         </div>
       </nav>
     </header>
 
-    <main class="mt-5 pb-16">
+    <main class="mt-5  pb-16 gap-4 flex justify-between">
       <!-- Main Body section  -->
-      <section class="  bg-[#FFFFFF] rounded-2xl">
+      <div class="bg-[#FFFFFF] rounded-lg">
         <!-- main page head section -->
-        <div class="p-6">
+        <div class="p-6 flex justify-between space-x-4">
           <!-- left  -->
           <div class="flex justify-start items-center gap-2 bg-cyan-50 p-8">
             <div class="p-6">
               <img src="./assets/checkbox.png" alt="" />
             </div>
-            <div>
-              <p>Task Assigned</p>
-              <h3 class="font-bold">06</h3>
+            <div class="text-[#00303C]">
+              <p class="font-medium text-lg">Task Assigned</p>
+              <h3 class="font-bold text-3xl">06</h3>
             </div>
           </div>
           <!-- middle  -->
-          <div></div>
+          <div
+              class="flex items-center px-6 py-2 bg-gradient-to-r from-blue-600 to-blue-300 text-white rounded-lg transition"
+            >
+              <img src="./assets/board.png" alt="" />
+              <p class="font-medium text-2xl">Discover Something New Today!</p>
+            </div>
           <!-- right  -->
-          <div></div>
-        </div>
-        <!-- main page body section // updated box container-->
-        <div class="bg-blue-50">
-          <!-- Box-1 for Fix Mobile Button Issue -->
-          <div>
-            <h4 class="border rounded p-2 bg-[#FFFFFF]">ShopEase</h4>
-            <h2>Fix Mobile Button Issue</h2>
-            <p class="border rounded p-2 bg-[#FFFFFF]">
-              Debug using Chrome DevTools, check for overlapping elements, and
-              ensure onClick works properly and ensure onClick works properly
-            </p>
-            <div>
-              <div>
-                <p>Deadline</p>
-                <h4>21 March 2025</h4>
+          <div
+              class="flex items-start gap-4 bg-gray-100 p-8 rounded-lg text-start"
+            >
+              <div class="p-5 rounded-none bg-none">
+                <img src="./assets/calender.png" alt="" />
               </div>
+              <div>
+                <span class="text-xs text-gray-500">Wed,</span>
+                <p class="text-lg font-semibold text-gray-900">Jul 28 2025</p>
+              </div>
+            </div>
+        </div>
+
+        <!-- main page body section // updated box container-->
+        <div class="m-6 grid grid-cols-3">
+          <!-- Box-1 for Fix Mobile Button Issue -->
+          <div
+            class="max-w-xs p-4 bg-white rounded-lg shadow-md border border-gray-200"
+          >
+            <span
+              class="px-2 py-1 text-xs font-semibold text-gray-600 bg-gray-100 rounded-md"
+              >ShopEase</span
+            >
+
+            <h2 class="mt-2 text-lg font-semibold text-gray-900">
+              Fix Mobile Button Issue
+            </h2>
+
+            <p class="mt-1 text-sm text-gray-500">
+              Debug using Chrome DevTools, check for overlappi...
+            </p>
+
+            <div class="mt-4 flex justify-between items-center">
+              <div>
+                <h1 class="text-xs text-gray-500">Deadline</h1>
+                <p class="text-sm font-semibold text-gray-900">21 March 2025</p>
+              </div>
+
               <button
-                class="btn rounded-lg bg-blue-700 text-white mt-4 ml-4 px-4"
+                class="px-3 py-1 text-sm font-medium text-white bg-blue-600 rounded-md"
               >
                 Completed
               </button>
             </div>
           </div>
+          <!-- -------- -->
         </div>
-      </section>
+      </div>
       <!-- Activity Log History -->
-      <section></section>
+      <div>
+        <div class="bg-white rounded-lg w-full">
+          <div class="text-center p-5">
+            <div class="flex justify-center gap-4">
+              <div class="w-6">
+                <img src="./assets/activity.png" alt="" />
+              </div>
+              <h3 class="text-lg font-semibold">Activity Log</h3>
+            </div>
+            <button class="mt-3 px-4 py-2 bg-[#3752FD] text-white rounded-xl">
+              Clear History
+            </button>
+          </div>
+          <hr />
+          <div class="mt-2 p-5">
+            <p class="text-gray-600 text-sm border-b py-2">
+              You have completed the task Add Dark Mode at 12:48:15 PM
+            </p>
+            <p class="text-gray-600 text-sm border-b py-2">
+              You have completed the task Fix Mobile Button Issue at 1:15:30 PM
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
 
     <script src="./utilities/utilities.js"></script>
+    <script src="./script/discovery.js"></script>
   </body>
 </html>
