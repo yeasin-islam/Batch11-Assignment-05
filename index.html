@@ -40,12 +40,14 @@
     </style>
   </head>
 
-  <body class="font-poppins bg-yellow-100 pt-6">
+  <body class="font-poppins bg-[#F4F7FF] pt-6">
     <section class="container mx-auto">
+
       <!-- navbar section  -->
       <nav
         class="navbar flex justify-between bg-base-100 rounded-lg shadow-sm px-6 py-3"
       >
+
         <!-- left side  -->
         <div class="flex justify-start items-center gap-3">
           <div class="w-10"><img src="./assets/logo.png" alt="" /></div>
@@ -53,6 +55,7 @@
             Dev<span class="font-bold">Board</span>
           </h2>
         </div>
+
         <!-- right site -->
         <div class="flex justify-end items-center gap-3">
           <div
@@ -66,29 +69,37 @@
               23
             </h3>
           </div>
-          <button class="p-2 bg-[#F4F7FF] rounded-full">
+          <button
+            onclick="changeBodyColor()"
+            class="p-2 bg-[#F4F7FF] rounded-full"
+          >
             <img class="w-8" src="./assets/theme-btn.png" alt="" />
           </button>
         </div>
       </nav>
 
+      <!-- main section  -->
       <main class="mt-5 pb-16 gap-4 flex">
-        <!-- Main Body section  -->
+
+        <!-- Left nav and box container section  -->
         <div class="bg-[#FFFFFF] rounded-lg w-10/12">
-          <!-- main page head section -->
-          <div class="Maincontainer flex p-6 place-content-between">
+
+          <!-- left sides nav section -->
+          <div class="flex p-6 place-content-between">
+
             <!-- left  -->
             <div
-              class="cildcontainer1 flex items-center rounded-lg gap-4 bg-[#F4F7FF] pt-4 pr-2 pb-4 pl-4"
+              class="flex items-center rounded-lg gap-4 bg-[#F4F7FF] pt-4 pr-2 pb-4 pl-4"
             >
               <div class="p-6 bg-white rounded-full">
                 <img src="./assets/checkbox.png" alt="" />
               </div>
               <div class="text-[#00303C]">
                 <p class="font-medium text-base">Task Assigned</p>
-                <h3 id="task-assigned-number" class="font-bold text-3xl">06</h3>
+                <h3 id="task-assigned-number" class="font-bold text-3xl">6</h3>
               </div>
             </div>
+
             <!-- middle  -->
             <div
               id="go-to-discovary-page"
@@ -105,6 +116,7 @@
                 </p>
               </div>
             </div>
+
             <!-- right  -->
             <div
               class="flex items-center gap-4 bg-[#F4F7FF] pt-4 pr-5 pb-4 pl-4 rounded-lg"
@@ -112,14 +124,15 @@
               <div class="p-4 bg-white rounded-full">
                 <img src="./assets/calender.png" alt="" />
               </div>
-              <p class="text-lg font-semibold text-[#00303C]">
-                Wed, <br />Jul 28 2025
+              <p id="currentDate" class="text-lg font-semibold text-[#00303C]">
+                DN, <br />MM DD YYYY
               </p>
             </div>
           </div>
 
           <!-- updated box container-->
           <div class="m-6 grid grid-cols-3 gap-4">
+
             <!-- Box-1 -->
             <div class="p-6 rounded-lg bg-[#F4F7FF]">
               <button
@@ -128,7 +141,10 @@
                 ShopEase
               </button>
 
-              <h2 id="box-1-heading" class="mt-4 text-lg font-medium text-gray-900">
+              <h2
+                id="box-1-heading"
+                class="mt-4 text-lg font-medium text-gray-900"
+              >
                 Fix Mobile Button Issue
               </h2>
 
@@ -150,13 +166,15 @@
                   </p>
                 </div>
 
-                <button id="box-1-complete-btn"
+                <button
+                  id="box-1-complete-btn"
                   class="px-3 py-2 text-sm font-medium text-white bg-blue-600 rounded-md"
                 >
                   Completed
                 </button>
               </div>
             </div>
+
             <!-- Box-2 -->
             <div class="p-6 rounded-lg bg-[#F4F7FF]">
               <button
@@ -165,7 +183,10 @@
                 CloudSync
               </button>
 
-              <h2 class="mt-4 text-lg font-medium text-gray-900">
+              <h2
+                id="box-2-heading"
+                class="mt-4 text-lg font-medium text-gray-900"
+              >
                 Add Dark Mode
               </h2>
 
@@ -187,12 +208,14 @@
                 </div>
 
                 <button
+                  id="box-2-complete-btn"
                   class="px-3 py-2 text-sm font-medium text-white bg-blue-600 rounded-md"
                 >
                   Completed
                 </button>
               </div>
             </div>
+
             <!-- Box-3 -->
             <div class="p-6 rounded-lg bg-[#F4F7FF]">
               <button
@@ -201,8 +224,11 @@
                 SwiftPay
               </button>
 
-              <h2 class="mt-4 text-lg font-medium text-gray-900">
-                Optimize Home page 
+              <h2
+                id="box-3-heading"
+                class="mt-4 text-lg font-medium text-gray-900"
+              >
+                Optimize Home page
               </h2>
 
               <div
@@ -224,12 +250,14 @@
                 </div>
 
                 <button
+                  id="box-3-complete-btn"
                   class="px-3 py-2 text-sm font-medium text-white bg-blue-600 rounded-md"
                 >
                   Completed
                 </button>
               </div>
             </div>
+
             <!-- Box-4 -->
             <div class="p-6 rounded-lg bg-[#F4F7FF]">
               <button
@@ -238,7 +266,10 @@
                 Meta
               </button>
 
-              <h2 class="mt-4 text-lg font-medium text-gray-900">
+              <h2
+                id="box-4-heading"
+                class="mt-4 text-lg font-medium text-gray-900"
+              >
                 Add new emoji 🤲
               </h2>
 
@@ -261,12 +292,14 @@
                 </div>
 
                 <button
+                  id="box-4-complete-btn"
                   class="px-3 py-2 text-sm font-medium text-white bg-blue-600 rounded-md"
                 >
                   Completed
                 </button>
               </div>
             </div>
+
             <!-- Box-5 -->
             <div class="p-6 rounded-lg bg-[#F4F7FF]">
               <button
@@ -275,7 +308,10 @@
                 Google LLC
               </button>
 
-              <h2 class="mt-4 text-lg font-medium text-gray-900">
+              <h2
+                id="box-5-heading"
+                class="mt-4 text-lg font-medium text-gray-900"
+              >
                 Integrate OpenAI API
               </h2>
 
@@ -298,12 +334,14 @@
                 </div>
 
                 <button
+                  id="box-5-complete-btn"
                   class="px-3 py-2 text-sm font-medium text-white bg-blue-600 rounded-md"
                 >
                   Completed
                 </button>
               </div>
             </div>
+
             <!-- Box-6 -->
             <div class="p-6 rounded-lg bg-[#F4F7FF]">
               <button
@@ -312,7 +350,10 @@
                 Glassdoar
               </button>
 
-              <h2 class="mt-4 text-lg font-medium text-gray-900">
+              <h2
+                id="box-6-heading"
+                class="mt-4 text-lg font-medium text-gray-900"
+              >
                 Improve Job searching
               </h2>
 
@@ -335,6 +376,7 @@
                 </div>
 
                 <button
+                  id="box-6-complete-btn"
                   class="px-3 py-2 text-sm font-medium text-white bg-blue-600 rounded-md"
                 >
                   Completed
@@ -344,7 +386,7 @@
           </div>
         </div>
 
-        <!-- Activity Log History -->
+        <!--Right Activity History section-->
         <div class="w-3/12">
           <div class="bg-white rounded-lg h-full">
             <div class="text-center p-5">
@@ -356,21 +398,17 @@
                   Activity Log
                 </h3>
               </div>
-              <button class="mt-3 px-4 py-2 bg-[#3752FD] text-white rounded-xl">
+              <button
+                onclick="hendelHistory()"
+                class="mt-3 px-4 py-2 bg-[#3752FD] text-white rounded-xl"
+              >
                 Clear History
               </button>
             </div>
             <hr />
-            <div id="activlog-history" class="p-5">
-              <p class="text-gray-600 text-sm p-3 my-4 bg-[#F4F7FF] py-2">
-                You have completed the task Add Dark Mode at 12:48:15 PM
-              </p>
-              <hr />
-              <p class="text-gray-600 text-sm p-3 my-4 bg-[#F4F7FF] py-2">
-                You have completed the task Add Dark Mode at 12:48:15 PM
-              </p>
-              <hr />
-            </div>
+            
+            <!-- Add innerHTML div -->
+            <div id="activlog-history" class="px-3"></div>
           </div>
         </div>
       </main>
@@ -378,6 +416,6 @@
 
     <script src="./utilities/utilities.js"></script>
     <script src="./script/discovery.js"></script>
-    <script src="./script/box-1.js"></script>
+    <script src="./script/boxcontainer.js"></script>
   </body>
 </html>
