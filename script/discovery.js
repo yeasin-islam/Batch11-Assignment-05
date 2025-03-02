@@ -4,5 +4,5 @@ document
   .addEventListener("click", function (event) {
     event.preventDefault();
     window.location.href = "./discovery.html";
-    alert("Update sucessfull");
+    
   });
